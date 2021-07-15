@@ -7,6 +7,9 @@ import '../vuetify/abc'
 import '../vuetify/slider'
 import  '../vuetify/elevation'
 import '../vuetify/typografy'
+import '../vuetify/transition'
+import '../vuetify/alert'
+import '../vuetify/avatars'
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
