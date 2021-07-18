@@ -10,6 +10,7 @@ import '../vuetify/typografy'
 import '../vuetify/transition'
 import '../vuetify/alert'
 import '../vuetify/avatars'
+import '../vuetify/base'
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()

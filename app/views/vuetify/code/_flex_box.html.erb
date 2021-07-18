@@ -1,5 +1,7 @@
 <div id="app">
   <v-app id="inspire">
+    <h1>Flex_box</h1>
+    <h3>ヘッダーなどに使える</h3>
     <div>
       <v-card
         class="d-flex flex-row mb-6"
@@ -84,5 +86,40 @@
         </v-card>
       </div>
     </div>
+    <h3>要素を均等に配置</h3>
+    <v-card
+      class="d-flex justify-space-between mb-6"
+      :color="$vuetify.theme.dark ? 'grey darken-3' : 'grey lighten-4'"
+      flat
+      tile
+    >
+      <v-card
+        v-for="n in 3"
+        :key="n"
+        class="pa-2"
+        outlined
+        tile
+      >
+        justify-space-between
+      </v-card>
+    </v-card>
+    <h3>親要素と子要素の縦幅をあわせる</h3>
+    <v-card
+      class="d-flex align-stretch mb-6"
+      color="grey lighten-2"
+      flat
+      height="100"
+      tile
+    >
+      <v-card
+        v-for="n in 3"
+        :key="n"
+        class="pa-2"
+        outlined
+        tile
+      >
+        align-stretch
+      </v-card>
+    </v-card>
   </v-app>
 </div>

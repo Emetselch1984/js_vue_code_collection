@@ -1,0 +1,108 @@
+<h1>Grid system</h1>
+<div id="base">
+  <v-app id="inspire">
+    <v-container class="grey lighten-5">
+      <v-row no-gutters>
+        <v-col
+          v-for="n in 3"
+          :key="n"
+          cols="12"
+          sm="4"
+        >
+          <v-card
+            class="pa-2"
+            outlined
+            tile
+          >
+            One of three columns
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <h3>ガターなし</h3>
+    <v-container class="grey lighten-5">
+      <v-row >
+        <v-col
+          v-for="n in 3"
+          :key="n"
+          cols="12"
+          sm="4"
+        >
+          <v-card
+            class="pa-2"
+            outlined
+            tile
+          >
+            One of three columns
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <h3>containerなし</h3>
+    <v-row class="grey lighten-5" no-gutters>
+      <v-col
+        v-for="n in 3"
+        :key="n"
+        cols="12"
+        sm="4"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+      </v-col>
+    </v-row>
+    <h3>containerなしでgutterあり</h3>
+    <v-row class="grey lighten-5">
+      <v-col
+        v-for="n in 3"
+        :key="n"
+        cols="12"
+        sm="4"
+      >
+        <v-card
+          class="pa-2"
+          outlined
+          tile
+        >
+          One of three columns
+        </v-card>
+      </v-col>
+    </v-row>
+    <h3>カード内の要素に合わせて縦幅が調整される</h3>
+    <v-container class="grey lighten-5">
+      <v-row no-gutters>
+        <v-col cols="9">
+          <v-card
+            class="pa-2"
+            outlined
+            tile
+          >
+            .col-9
+          </v-card>
+        </v-col>
+        <v-col cols="4">
+          <v-card
+            class="pa-2"
+            outlined
+            tile
+          >
+            .col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.
+          </v-card>
+        </v-col>
+        <v-col cols="6">
+          <v-card
+            class="pa-2"
+            outlined
+            tile
+          >
+            .col-6<br>Subsequent columns continue along the new line.
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
+</div>

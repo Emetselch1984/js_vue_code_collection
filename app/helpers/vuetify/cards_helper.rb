@@ -1,0 +1,2 @@
+module Vuetify::CardsHelper
+end
