@@ -1,3 +1,13 @@
-// Place all the styles related to the vuetify::portforio controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#sheet-image1 {
+  background-image: image-url('universe.jpg');
+}
+
+#home {
+  background-image: image-url('top-page1.jpg');
+  min-height: 60vh;
+  .home-wrapper {
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}

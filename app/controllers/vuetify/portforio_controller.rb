@@ -1,3 +1,3 @@
-class Vuetify::PortforioController < ApplicationController
+class Vuetify::PortforioController < Vuetify::CodeController
   def index ;end
 end

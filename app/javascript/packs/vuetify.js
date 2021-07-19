@@ -11,6 +11,8 @@ import '../vuetify/transition'
 import '../vuetify/alert'
 import '../vuetify/avatars'
 import '../vuetify/base'
+import '../vuetify/cards/loading_card'
+import '../vuetify/tool-bar/base'
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
